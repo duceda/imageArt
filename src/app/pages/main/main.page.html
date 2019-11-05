@@ -5,5 +5,12 @@
 </ion-header>
 
 <ion-content padding>
-
+  <ion-row>
+    <ion-col size="12" size-sm>
+      <ion-button expand="block" disabled='{{!infoIsAvailable}}' routerLink="/infoCity">
+        Discover more about {{citySelected.name}}!
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <div>What are you seeing?</div>
 </ion-content>
