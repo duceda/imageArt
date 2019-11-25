@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  googleCloudVisionAPIKey: '3729dcaad2ea8fd7b43c841475b38222b00c0d37'
 };
 
 /*
