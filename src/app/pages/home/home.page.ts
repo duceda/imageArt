@@ -49,7 +49,7 @@ export class HomePage {
 
       await loading.present();
       this.vision.getLabels(imageData, this.selectedfeature).subscribe(async (result) => {
-        console.log(result.json())
+        alert(result.json());
         let navigationExtras: NavigationExtras = {
           queryParams: {
             special: JSON.stringify(imageData),
@@ -80,8 +80,8 @@ export class HomePage {
             this.takePhoto();
           }
         }, {
-          text: 'Gallary',
-          role: 'gallary',
+          text: 'Gallery',
+          role: 'gallery',
           handler: () => {
             this.selectPhoto();
           }
